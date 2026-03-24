@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f9fc;
+    color: #222;
+}
+header {
+    background: #0277bd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.hero {
+    background: url("images/file_00000000c330722f90e76db515490e5c.png")
+    center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+.btn {
+    display: inline-block;
+    background: gold;
+    color: #000;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background: white;
+}
+.features div {
+    width: 30%;
+    text-align: center;
+}
+footer {
+    background: #013a63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer .social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer .social a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .features, .tours {
+        flex-direction: column;
+        align-items: center;
+    }
+    .package {
+        width: 90%;
+        margin: 15px 0;
+    }
+    .booking form {
+        width: 90%;
+    }
+}

@@ -1,0 +1,117 @@
+.tours {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f0f8ff;
+}
+.tours h2 {
+    margin-bottom: 30px;
+    color: #0277bd;
+}
+.package {
+    display: inline-block;
+    width: 45%;
+    margin: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+}
+.package img {
+    width: 100%;
+    border-radius: 5px;
+}
+.package h3 {
+    color: #013a63;
+    margin: 15px 0 10px 0;
+}
+.package p {
+    margin: 5px 0;
+}
+header {
+    background: #0277bd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .highlight-item{
+        width: 90%;
+        margin: 15px 0;
+    }
+    .features, .tours {
+        flex-direction: column;
+        align-items: center;
+    }
+    .package {
+        width: 90%;
+        margin: 15px 0;
+    }
+    .booking form {
+        width: 90%;
+    }
+}
+footer {
+    background: #013a63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer .social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer .social a:hover {
+    text-decoration: underline;
+}
+.highlights {
+    padding: 40px 20px;
+    background: #f0f8ff;
+    text-align: center;
+}
+.highlights h2 {
+    color: #0277bd;
+    margin-bottom: 20px;
+}
+.highlight-category {
+    margin-top: 30px;
+}
+.highlight-category h3 {
+    color: #013a63;
+    margin-bottom: 15px;
+}
+.highlight-item {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+}
+.highlight-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+.highlight-item h4 {
+    color: #0277bd;
+    margin: 10px 0 5px 0;
+}
+.highlight-item p {
+    font-size: 14px;
+    margin: 0;
+}

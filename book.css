@@ -1,0 +1,75 @@
+.booking {
+    padding: 40px 20px;
+    text-align: center;
+    background: #e0f7fa;
+}
+.booking h2 {
+    color: #0277bd;
+    margin-bottom: 20px;
+}
+.booking form {
+    display: inline-block;
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+.booking input[type="text"],
+.booking input[type="email"],
+.booking input[type="date"],
+.booking select,
+.booking textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+.booking input[type="submit"] {
+    width: 100%;
+    background: #0277bd;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.booking input[type="submit"]:hover {
+    background: #013a63;
+}
+footer {
+    background: #013a63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer .social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer .social a:hover {
+    text-decoration: underline;
+}
+header {
+    background: #0277bd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}

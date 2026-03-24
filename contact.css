@@ -1,0 +1,73 @@
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f0f8ff;
+}
+.contact h2 {
+    color: #0277bd;
+    margin-bottom: 20px;
+}
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.contact-info a {
+    color: #0277bd;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.map {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+header {
+    background: #0277bd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .features, .tours {
+        flex-direction: column;
+        align-items: center;
+    }
+    .package {
+        width: 90%;
+        margin: 15px 0;
+    }
+    .booking form {
+        width: 90%;
+    }
+}
+footer {
+    background: #013a63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer .social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer .social a:hover {
+    text-decoration: underline;
+}

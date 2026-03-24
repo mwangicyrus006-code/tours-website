@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | Swahili Coast Tours</title>
+        <meta name="description" content="Book your Mombasa tour with Swahili Coast Tours. Fill the form to 
+        reserve your spot and pay via Mpesa or PayPal.">
+        <link rel="stylesheet" href="book.css">
+</head>
+<body>
+      <header>
+        <h1>Swahili Coast Tours</h1>
+        <p>Mombasa & coastal Travel Experts</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="tours.html">Tours</a>
+            <a href="book.html">Book</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="booking">
+        <h2>Book Your Tour</h2>
+        <p>Fill out the form below to reserve your tour with Swahili Coast Tours.</p>
+
+        <form action="https://formsubmit.co/info.swahilicoast@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your full name" required><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="your@email.com"required><br><br>
+             <label for="whatsapp">WhatsApp</label><br>
+            <input type="text" id="whatsapp" name="whatsapp" placeholder="+254740178288"required><br><br>
+            <label for="tour"><Select> Tour Package:</Select></label><br>
+            <select id="tour" name="tour" required>
+                <option value="">_ _Select a package_ _</option>
+                <option value="Diani Beach Escape">Diani Beach Escape</option>
+                 <option value="Mombasa Historical Tour">Mombasa Historical Tour</option>
+                  <option value="Wasini Island Adventure">Wasini Island Adventure</option>
+                   <option value="Tsavo Safari Experience">Tsavo Safari Experience</option>
+            </select><br><br>
+
+            <label for="date">Preferred Date:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+             <label for="message">Additional Notes:</label><br>
+             <textarea id="message" name="message" placeholder="Any special requests" rows="4"></textarea><br><br>
+
+             <input type="submit" value="Book Now">
+        </form>
+        <p id="confirmation" style="color: green; display: none;">
+            Thank you! Your booking request has been sent. We will contact you soon.
+        </p>
+        <p>Or chat with us on <a href="https://wa.me/254740178288" target="_blank">WhatsApp</a></p>
+
+        <p>Or pay via Mpesa directly:</p>
+        <a href="https://wa.me/254740178288? text=I want to pay for [Tour Package] on [Date]" target="_blank">
+            <button type="button">Pay with Mpesa</button>
+        </a>
+
+        <p>Or pay with Paypal:</p>
+        <form action="https://www.PayPal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+            <input  type="submit" value="pay with Paypal" class="paypal-button">
+        </form>
+    </section>
+          <footer>
+        <p>© 2026 Swahili Coast Tours | Mombasa, Kenya</p>
+         <div class="social">
+            <a href="Swahili Coast Tours" target="_blank">Facebook</a> |
+            <a href="Swahili Coast Tours" target="_blank">Intagram</a> |
+            <a href="Swahili Coast Tours" target="_blank">Twitter</a>
+        </div>
+    </footer>
+    <script>
+        const mpesaButton = 
+        document.querySelector('a[href*="wa.me"]');
+          const form = 
+        document.querySelector("form");
+          const tourSelect = 
+        document.getElementById("tour");
+          const dateInput = 
+        document.getElementById("date");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const tour = 
+            encodeURIComponent(tourSelect.value);
+            const date = 
+            encodeURIComponent(dateInput.value);
+            mpesaButton.href = 'https://wa.me/254740178288?text=I want to pay for $ {tour} on ${date}';
+            form.submit();
+        });
+    </script>
+</body>
+</html>
